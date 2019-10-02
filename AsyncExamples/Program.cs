@@ -19,9 +19,9 @@ namespace AsyncExamples
 
         private static async Task RunExamplesAsync(ExternalCall ec)
         {
-            //await new FireAndForget(ec).HighFiveTeamAsync();
+            new FireAndForget(ec).Go();
             //await new ErrorHandling(ec).GoAsync();
-            await new ReturnWithoutAwaits(ec).GoAsync();
+            //await new ReturnWithoutAwaits(ec).GoAsync();
         }
     }
 }

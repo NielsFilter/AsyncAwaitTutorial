@@ -19,14 +19,7 @@ namespace AsyncExamples
 
         public async Task GoAsync()
         {
-            try
-            {
-                await BreakSomeRulesAsync();
-            }
-            catch (InvalidLuckyNumberException e)
-            {
-                Console.WriteLine("Relax! I've got this");
-            }
+            await BreakSomeRulesAsync();
 
             Console.WriteLine("We're DONE here!");
         }
@@ -40,12 +33,6 @@ namespace AsyncExamples
             }
 
             Console.WriteLine("Good to go...");
-        }
-
-        
-        public void SyncMethod()
-        {
-            _ec.WorkHardAsync().Wait();
         }
     }
 

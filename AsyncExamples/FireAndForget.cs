@@ -7,7 +7,7 @@ namespace AsyncExamples
 {
     public class FireAndForget
     {
-        //private Task _go;
+        private Task _go;
         private readonly ExternalCall _ec;
 
         public FireAndForget(ExternalCall ec)
@@ -15,11 +15,11 @@ namespace AsyncExamples
             _ec = ec;
         }
 
-        public async Task Go()
+        public void Go()
         {
-            Console.WriteLine("Fire and forget example");
+            Console.WriteLine("Preparing to work hard...");
 
-            await _ec.WorkHardAsync();
+            _ec.WorkHardAsync();
 
             Console.WriteLine("DONE!!!! Earned yourself a cold one");
         }

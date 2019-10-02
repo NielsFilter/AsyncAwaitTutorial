@@ -18,12 +18,11 @@ namespace AsyncExamples
             await DoStuffAsync();
         }
 
-        public async Task DoStuffAsync()
+        public Task DoStuffAsync()
         {
             var worker = new SomeWorker(_ec);
-            await worker.WorkAsync();
+            return worker.WorkAsync();
         }
-
 
         public class SomeWorker : IDisposable
         {

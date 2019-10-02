@@ -19,13 +19,13 @@ namespace ExternalDependency
 
         public int GetLuckyNumber()
         {
-                for (var i = 0; i < 5; i++)
-                {
-                    Console.WriteLine("Calculating lucky number...");
-                    Thread.Sleep(1000);
-                }
+            for (var i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Calculating lucky number...");
+                Thread.Sleep(1000);
+            }
 
-                return new Random().Next(0, 100);
+            return new Random().Next(0, 100);
         }
 
         public async Task WorkHardAsync(int iterations = 5)
