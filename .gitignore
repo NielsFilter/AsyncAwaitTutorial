@@ -1,0 +1,12 @@
+*.dll
+*.exe
+*.pdb
+*.suo
+**/*.csproj.user
+*.DotSettings.user
+
+[Bb]in/
+[Oo]bj/
+packages/
+.vs/
+/.idea
