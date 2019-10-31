@@ -7,7 +7,6 @@ namespace AsyncExamples
 {
     public class FireAndForget
     {
-        private Task _go;
         private readonly ExternalCall _ec;
 
         public FireAndForget(ExternalCall ec)
