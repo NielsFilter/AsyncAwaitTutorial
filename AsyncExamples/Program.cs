@@ -22,7 +22,9 @@ namespace AsyncExamples
             new FireAndForget(ec).Go();
             //await new ErrorHandling(ec).GoAsync();
             //await new ReturnWithoutAwaits(ec).GoAsync();
+            //await new CustomAsyncMethod(ec).GoAsync();
             //await new YieldReturn(ec).GoAsync();
+
         }
     }
 }
